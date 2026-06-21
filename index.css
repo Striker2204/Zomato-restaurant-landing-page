@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(225, 222, 218);
+}
+
+.card:hover{
+    background-color: white;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+ .card{
+    display: inline-block;
+    width: 420px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(224, 216, 216);
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.resturant{
+    position: relative;
+}
+
+.pic{
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.name ,.food,.location{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rating{
+    background-color: green;
+    font-weight: bold;
+    font-size: 20px;
+    height: 25px;
+    width: auto;
+    padding: 3px;
+    position: absolute;
+    right: 5px;
+    color: white;
+    border-radius: 8px;
+}
+
+.box{
+    display: inline-block;
+}
+
+.amount{
+    position: absolute;
+    font-weight: bold;
+    right: 5px;
+    color: grey;
+    font-weight: lighter;
+}
+
+.distance{
+    position: absolute;
+    right: 5px;
+    font-size:17px;
+}
+
+.resturant_name{
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.food_name{
+    font-size: 18px;
+    font-style: inherit;
+    margin-left: 5px;
+    color: grey;
+}
+
+.place_name{
+    font-size: 18px;
+    margin-left: 5px;
+    color: rgb(169, 161, 161);
+}
+
+.image{
+    position: relative;
+}
+
+.off{
+    position: absolute;
+    background-color: rgba(14, 17, 187, 0.656);
+    font-size: 21px;
+    font-style: oblique;
+    color: white;
+    bottom: 18px;
+    right: 19px;
+}
+
+.time{
+    display: inline-block;
+    margin-left: 9px;
+    font-size: 18px;
+    color: rgba(187, 14, 54, 0.656);
+    font-weight: bold;
+    
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.brand{
+    margin-left: 0px;
+    margin-right: 0px;
+    color: rgb(220, 24, 24);
+    font-size: 25px;
+}
+
+.log{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.searching{
+    width: 500px;
+    height: 45px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0px 30px pink;
+}
+
+.searching:focus{
+    box-shadow: 0 0 10px rgba(226,55,68,0.5);
+}
+
+.searching, .log, .sign{
+    position: relative;
+    bottom: 12px;
+}
+
+.lg, .sg{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lg:hover,
+.sg:hover{
+    background-color: #e23744;
+    color: white;
+}
+
+.one{
+    height: 50px;
+}
+
+.two{
+    position: relative;
+    bottom: 30px;
+    margin-left: 5px;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.collect{
+    height: 700px;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+.ranchi{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    color: #e23744;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.head{
+    text-align: center;
+}
+
+.dining,
+.delivery,
+.nightlife{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dining:hover,
+.delivery:hover,
+.nightlife:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.tagline{
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+footer{
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px){
+
+    .first{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .searching{
+        width: 90%;
+    }
+
+    .second{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card{
+        width: 95%;
+    }
+
+    .pic{
+        width: 100%;
+        height: auto;
+    }
+
+    .ranchi{
+        font-size: 32px;
+    }
+}
